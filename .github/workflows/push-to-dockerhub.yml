@@ -16,7 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - name: Check out the repo
+      uses: actions/checkout@v2
+    
+    - name: Set up Docker metadata
+      id: meta
+      uses: docker/metadata-action@v3
+      with:
+        images: min2ha/docker-pa11y 
 
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
