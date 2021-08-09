@@ -9,7 +9,7 @@ LABEL org.label-schema.vendor="UKWA" \
   org.label-schema.docker.cmd="docker run -it --rm --cap-add=SYS_ADMIN min2ha/docker-pa11y http://example.com" \
   org.label-schema.docker.cmd.help="docker run --rm min2ha/docker-pa11y" \
   org.label-schema.docker.debug="docker exec -it $CONTAINER bash" \
-  org.label-schema.schema-version="1.0"
+  org.label-schema.schema-version="latest" \
   org.label-schema.version="1.0"
 
 USER root
