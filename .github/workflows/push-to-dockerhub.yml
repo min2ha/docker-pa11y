@@ -30,6 +30,7 @@ jobs:
       with:
         image: min2ha/docker-pa11y
         registry: docker.io
+        tags: min2ha/docker-pa11y:latest
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-         
+        
