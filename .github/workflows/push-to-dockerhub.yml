@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-java:
+  push_to_dockerhub_registries:
 
     runs-on: ubuntu-latest
     
