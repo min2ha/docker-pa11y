@@ -1,4 +1,4 @@
-FROM buildkite/puppeteer:10.0.0
+FROM alekzonder/puppeteer:1
 
 # @see http://label-schema.org/rc1/
 LABEL org.label-schema.vendor="UKWA" \
