@@ -1,8 +1,5 @@
 FROM alekzonder/puppeteer:1
 
-# A simple dockerfile to provide gnu netcat.
-RUN apt-get update && apt-get -y install netcat && apt-get clean
-
 # @see http://label-schema.org/rc1/
 LABEL org.label-schema.vendor="UKWA" \
   org.label-schema.name="ukwa-pa11y" \
@@ -18,7 +15,7 @@ LABEL org.label-schema.vendor="UKWA" \
 USER root
 
 # Let's get pa11y v5 in here. Also adds http-server for running pa11y against staticly-generated HTML.
-RUN yarn global add pa11y@5 pa11y-ci@2 http-server
+RUN yarn global add pa11y@5 pa11y-ci@2 netcat curl http-server
 
 USER pptruser
 
