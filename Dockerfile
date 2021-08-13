@@ -1,4 +1,4 @@
-FROM alekzonder/puppeteer:1
+FROM min2ha/docker-puppeteer:latest
 
 # @see http://label-schema.org/rc1/
 LABEL org.label-schema.vendor="UKWA" \
