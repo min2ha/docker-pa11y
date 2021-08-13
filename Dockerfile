@@ -1,5 +1,8 @@
 FROM alekzonder/puppeteer:1
 
+# A simple dockerfile to provide gnu netcat.
+RUN apt-get update && apt-get -y install netcat && apt-get clean
+
 # @see http://label-schema.org/rc1/
 LABEL org.label-schema.vendor="UKWA" \
   org.label-schema.name="ukwa-pa11y" \
