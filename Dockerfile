@@ -15,7 +15,7 @@ LABEL org.label-schema.vendor="UKWA" \
 USER root
 
 # Let's get pa11y v5 in here. Also adds http-server for running pa11y against staticly-generated HTML.
-RUN yarn global add pa11y@5 pa11y-ci@2 netcat curl http-server
+RUN yarn global add pa11y@5 pa11y-ci@2 node-netcat node-libcurl http-server
 
 USER pptruser
 
